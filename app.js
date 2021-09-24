@@ -12,7 +12,7 @@ function getTranslationURL(input) {
 
 function errorHandler(error){
     console.log("error occured", error)
-    alert("hey sorry we are expering some trouble!")
+    alert("hey sorry we are expering some trouble! Dont worry we will fix it soon!")
 };
 
 function clickEventHandler(){
@@ -22,7 +22,7 @@ function clickEventHandler(){
         .then(function gettingResponse(response){
             response.json();
         })
-        //.then(response => response.json)
+   
         .then(json => {
             var translatedText = json.contents.translated;
             outputBox.innerText = translatedText;
